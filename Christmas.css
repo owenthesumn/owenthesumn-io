@@ -1,0 +1,113 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    animation-name: backgroundColorPalette;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    margin: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#greetings {
+    text-shadow: 5px 5px 0px rgb(0, 71, 20, 0.5);
+    font-size: 100px;
+    margin-bottom: 0px;
+    font-family: 'Bangers', cursive;
+    color: #123859;
+}
+
+#letter {
+    position: absolute;
+    bottom: -550px;
+    width: 700px;
+    font-size: 17px;
+    visibility: hidden;
+}
+
+#letter-content {    
+    text-indent: 50px;
+    letter-spacing: 3px;
+    font-family: 'Bangers', cursive;
+    color: #123859;
+}
+
+#from {
+    margin-top: 50px;
+    align-self: flex-end;
+    font-family: 'Bangers', cursive;    
+    color: #123859;
+}
+
+#clickme {
+    font-family: 'Bangers', cursive;
+    font-size: 20px;    
+    color: #6889A6;
+    box-shadow: 5px 5px 0px rgba(0, 71, 20, 0.5);
+    background-color: #123859;
+    width: 200px;
+    height: 80px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clickme:hover {
+    background-color: #174c7a;
+}
+
+#spotify {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+#wuv {
+    font-family: 'Bangers', cursive;
+    position: absolute;
+    height: 500px;
+    font-size: 100px;
+    top:100px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: hidden;
+    color: #123859;
+}
+
+
+@keyframes backgroundColorPalette {
+    0% {
+        background-color: #224732;
+    }
+    25% {
+        background-color: #88A34F;
+    }
+    50% {
+        background-color: #aaf683;
+    }
+    75% {
+        background-color: #FFD99B;
+    }
+    100% {
+        background-color: #F28705;
+    }
+}
